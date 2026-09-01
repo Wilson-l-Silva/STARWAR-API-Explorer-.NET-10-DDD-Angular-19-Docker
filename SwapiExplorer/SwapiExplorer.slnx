@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="SwapiExplorer.Api/SwapiExplorer.Api.csproj" />
+    <Project Path="SwapiExplorer.Application/SwapiExplorer.Application.csproj" />
+    <Project Path="SwapiExplorer.Domain/SwapiExplorer.Domain.csproj" />
+    <Project Path="SwapiExplorer.Infrastructure/SwapiExplorer.Infrastructure.csproj" />
+  </Folder>
+</Solution>
