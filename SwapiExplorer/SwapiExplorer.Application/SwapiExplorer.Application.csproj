@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SwapiExplorer.Domain\SwapiExplorer.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
