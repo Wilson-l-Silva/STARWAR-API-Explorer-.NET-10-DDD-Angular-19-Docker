@@ -1,0 +1,27 @@
+<!-- Cabeçalho da seção -->
+<h2>Planetas de Star Wars</h2>
+
+<!-- Exibido enquanto a requisição HTTP está em andamento -->
+<p *ngIf="loading">Carregando...</p>
+
+<!-- Exibido se a chamada à API falhar -->
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+<!-- Grid de cards, um por planeta. *ngFor itera sobre o array "planets" -->
+<div class="planet-grid" *ngIf="!loading && !errorMessage">
+  <div class="planet-card" *ngFor="let planet of planets">
+    <h3>{{ planet.name }}</h3>
+    <p><strong>Clima:</strong> {{ planet.climate }}</p>
+    <p><strong>Terreno:</strong> {{ planet.terrain }}</p>
+    <p><strong>População:</strong> {{ planet.population }}</p>
+    <!-- Interpolação condicional simples usando o operador ternário do template -->
+    <p class="badge">{{ planet.isPopulated ? 'Habitado' : 'Não habitado / desconhecido' }}</p>
+  </div>
+</div>
+
+<!-- Controles de paginação -->
+<div class="pagination">
+  <button (click)="previousPage()" [disabled]="currentPage === 1">Anterior</button>
+  <span>Página {{ currentPage }}</span>
+  <button (click)="nextPage()">Próxima</button>
+</div>

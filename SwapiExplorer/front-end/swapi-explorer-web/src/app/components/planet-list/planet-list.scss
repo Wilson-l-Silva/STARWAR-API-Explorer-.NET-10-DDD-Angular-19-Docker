@@ -1,0 +1,30 @@
+// Estilo simples e didático — foco no aprendizado, não em design elaborado.
+.planet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.planet-card {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.badge {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
